@@ -9,7 +9,7 @@ class Manager : public Employee{
   Manager();
   Manager(int payRate);
   float get_hoursWorked() {return timeCount/60;}
-  void set_hoursWorked(float Hours){hoursWorked = Hours;}
+  void set_hoursWorked(float Hours) {hoursWorked = Hours;}
   int get_daysWorked() {return daysWorked;}
   void set_daysWorked(int Days) {daysWorked = Days;}
   void work(int mins);
