@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Casual::casual() {
+Casual::Casual() {
 
 }
 
