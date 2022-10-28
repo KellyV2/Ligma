@@ -1,20 +1,20 @@
 #include "Manager.h"
 
 Manager::Manager(int payRate) : Employee(payRate){
-  daysWorked = 0;
   hoursWorked = 0;
+  daysWorked = 0;
   timeCount = 0;
 }
 
 void Manager::work(int mins){
   for (int i = 0; i < mins; i++){
     if (energyLevel >= 0.25 && timeCount < 480) {
-      energyLevel = energyLevel - 0.25;
-      hoursWorked = hoursWorked + 1/60;
+      energyLevel -= 0.25;
       timeCount++;
+      hoursWorked += 1/60;
     }
   }
-  if (time_count >= 480){
+  if (timeCount >= 480){
     daysWorked++;
     hoursWorked = 0;
     energyLevel = 100;
