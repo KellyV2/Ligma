@@ -1,7 +1,5 @@
 #include "Casual.h"
 
-using namespace std;
-
 Casual::Casual(){
 
 }
